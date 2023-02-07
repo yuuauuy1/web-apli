@@ -131,21 +131,31 @@ h1{
 
 /*ブレイクポイント指定(スマホ表示)*/
 @media (max-width: 670px){
+body {
+    border:10px solid rgb(211, 225, 113);/* 枠線 */
+
+}
 .title{
-    width: 400px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
 }
           
 h1{
     top: 25%;
-    width: 340px;
-    font-size: 160%;
+    width: 300px;
+    font-size: 120%;
+}
+
+p{
+    top: 58%;  
+    margin: 8px;
+    width: 80%;
 }
           
 .searchbox{
     height: 70px;
-    width: 350px;	
-    top:75%;	
+    width: 300px;	
+    top:85%;	
 }     
     
 /*検索ボックス*/
