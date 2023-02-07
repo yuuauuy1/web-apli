@@ -1,0 +1,340 @@
+@charset "utf-8";
+/*ブレイクポイント指定しない時は通常のPC画面表示*/
+
+/*フォーム全体*/
+body {
+    width: 100%;
+    border:20px solid rgb(211, 225, 113);/* 枠線 */
+    box-sizing:border-box;
+    font-size: 20px;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: block;
+}
+
+/* ヘッダー*/
+header{
+    width: 800px;
+    height: 100px;
+    border-bottom: 3px solid rgb(211, 225, 113);
+    color: rgb(107, 106, 106);
+    margin: 0 auto;
+    position: relative;
+}
+
+h1{
+    width: 800px;
+    margin-top: 50px;
+    font-size: 200%;
+    position: absolute;
+    top: 20%;
+    left: 58%;
+    transform: translate(-50%, -50%);
+}
+
+h2{
+    position: absolute;/*フォームの相対位置*/	
+    top: 50%;
+    left: 88%;
+    transform: translate(-50%, -50%);
+    font-size: 90%;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+}
+
+/*ボディー*/
+.recipe_index{
+    margin: 0 auto;
+    height: 1000px;
+}
+
+.recipe{
+    border: 2px solid rgb(150, 150, 150);
+    padding: 12px;
+    margin-top: 15px;  
+    height: 184px;
+    width: 650px;
+    position: relative;/*フォームの相対位置*/
+    top:15%;	
+    left:46%;
+    transform: translate(-50%, -50%);
+    list-style:none;	
+}
+
+a{
+    color: #404040;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+img{
+    width: 180px;
+    height: 180px;  
+    border-radius: 4px;
+    position: absolute;
+    top:50%;
+    left:16%;
+    transform: translate(-50%, -50%);
+}
+
+.recipe h4{
+    color: rgb(107, 106, 106); 
+    margin-bottom: 16px;
+    font-size: 100%;
+    font-weight: 700;
+    line-height: 1.5;
+    width: 300px;
+    position: absolute;
+    top:8%;
+    left:54%;
+    transform: translate(-50%, -50%);
+}
+
+.ingredients {
+    color: rgb(107, 106, 106);
+    width: 300px;
+    position: absolute;
+    top:50%;
+    left:54%;
+    transform: translate(-50%, -50%);
+    font-size: 80%;
+}
+
+.name {
+    color: rgb(107, 106, 106);
+    width: 200px;
+    position: absolute;
+    top:80%;
+    left:47%;
+    transform: translate(-50%, -50%);
+    font-size: 70%;
+}
+
+.favorite {
+    border: 1px solid rgb(253, 100, 61);
+    background-color: white;
+    color: rgb(253, 100, 61);
+    font-weight: 400;
+    font-size: 70%;
+    line-height: 1.25rem;
+    border-radius: 4px;
+    height: 37px;
+    width: 130px; 
+    position: absolute;
+    top:18%;
+    left:88%;
+    transform: translate(-50%, -50%);
+}
+
+/* チェックボックス01 */
+input[type=checkbox] {
+    display: none;
+}
+.checkbox01 {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 30px;
+    position: absolute;
+    width: auto;
+    top: 45%;
+    left: 105%;
+}
+.checkbox01::before {
+    background: white;
+    border: 1px solid rgb(107, 106, 106);
+    content: '';
+    display: block;
+    height: 25px;
+    width: 25px;
+    margin-top: -8px;
+    position: absolute;
+    top: 50%;
+    left :5px;
+    
+}
+.checkbox01::after {
+    border-right: 3px solid  rgb(211, 225, 113);
+    border-bottom: 3px solid  rgb(211, 225, 113);
+    content: '';
+    display: block;
+    height: 18px;
+    width: 10px;
+    left: 12px;
+    top: 50%;
+    margin-top: -8px;
+    opacity: 0;
+    position: absolute; 
+    transform: rotate(45deg);
+    
+}
+input[type=checkbox]:checked + .checkbox01::after {
+    opacity: 1;
+}
+
+/*フッター*/
+.add_list{
+    height: 235px;	
+    position:relative;	
+    transform: translate(-50%, -50%);
+}
+
+/*買い物リスト作成ボタン*/
+#sbtn{
+    width:290px;
+    height:60px;
+    position:absolute; 
+    left:100%;  
+    top:50%;
+    transform: translate(-50%, -50%);
+    border:10px solid rgb(211, 225, 113);/* 枠線 */
+    box-sizing:border-box;
+    border-radius:16px;
+    background:rgb(255, 255, 254); 
+    color:rgb(107, 106, 106);
+    font-weight:bold; /*買い物リスト作成ボタンのテキスト太字*/ 
+    font-size: 120%;
+}
+
+/*買い物リスト作成ボタンマウスオーバー時*/
+#sbtn:hover{
+    color:rgb(178, 197, 53);/*買い物リスト作成ボタンマウスオーバー時のフォントカラー*/ 
+}
+
+/*ブレイクポイント指定(タブレット表示)*/
+@media (max-width: 1000px){
+/* ヘッダー*/
+header{
+    width: 550px;
+}
+
+h1{
+    width:550px;
+    font-size:170%;
+    left:54%;
+}
+
+h2{
+    top: 55%;
+    left: 85%;
+    font-size: 85%;
+}
+
+/*ボディー*/
+.recipe{	
+    left:46%;
+    margin-top: 12px;
+    width:450px;  
+    height: 170px;
+    top:12%;
+}
+
+img{
+    width: 150px;
+    height: 150px;      
+    left:18%;
+}
+
+.recipe h4{
+    left:68%;
+    width: 290px;
+}
+
+.ingredients {
+    left:68%;
+    transform: translate(-50%, -50%);
+    font-size: 78%;
+    width: 290px;
+}
+
+.name {
+    left:58%;
+}
+
+.favorite {
+    top:78%;
+    left:78%;
+}
+
+}
+/*ブレイクポイント指定(スマホ表示)*/
+@media (max-width: 670px){
+/* ヘッダー*/
+header{
+    width: 420px;
+    height: 100px;
+}
+
+h1{
+    width:420px;
+    font-size:120%;
+    left:54%;
+}
+
+h2{
+    top: 70%;
+    left: 81%;
+    font-size: 70%;
+}
+
+/*ボディー*/
+.recipe{	
+    padding: 12px;
+    margin-top: 12px;
+    width: 370px;  
+    height: 160px;
+    top:12%;
+}
+
+img{
+    width: 135px;
+    height: 135px;      
+    left:19%;
+}
+
+.recipe h4{
+    left:70%;
+    width: 240px;
+    font-size: 80%;
+}
+
+.ingredients {
+    left:70%;
+    font-size: 75%;
+    width: 240px;
+}
+
+.name {
+    left:65%;
+}
+
+.favorite {
+    top:80%;
+    left:83%;       
+    font-size: 65%;
+    height: 37px;
+    width: 116px; 
+}
+
+.checkbox01 {
+    left: 101%;
+}
+.checkbox01::before {
+    height: 22px;
+    width: 22px;    
+}
+.checkbox01::after {
+    height: 16px;
+    width: 8px;
+}
+
+/*フッター*/
+/*買い物リスト作成ボタン*/
+#sbtn{
+    width:250px;
+    height:50px;
+    border-radius:12px;
+    border:6px solid rgb(211, 225, 113);/* 枠線 */
+}
+}
