@@ -260,81 +260,88 @@ img{
 }
 /*ブレイクポイント指定(スマホ表示)*/
 @media (max-width: 670px){
-/* ヘッダー*/
-header{
-    width: 420px;
-    height: 100px;
-}
-
-h1{
-    width:420px;
-    font-size:120%;
-    left:54%;
-}
-
-h2{
-    top: 70%;
-    left: 81%;
-    font-size: 70%;
-}
-
-/*ボディー*/
-.recipe{	
-    padding: 12px;
-    margin-top: 12px;
-    width: 370px;  
-    height: 160px;
-    top:12%;
-}
-
-img{
-    width: 135px;
-    height: 135px;      
-    left:19%;
-}
-
-.recipe h4{
-    left:70%;
-    width: 240px;
-    font-size: 80%;
-}
-
-.ingredients {
-    left:70%;
-    font-size: 75%;
-    width: 240px;
-}
-
-.name {
-    left:65%;
-}
-
-.favorite {
-    top:80%;
-    left:83%;       
-    font-size: 65%;
-    height: 37px;
-    width: 116px; 
-}
-
-.checkbox01 {
-    left: 101%;
-}
-.checkbox01::before {
-    height: 22px;
-    width: 22px;    
-}
-.checkbox01::after {
-    height: 16px;
-    width: 8px;
-}
-
-/*フッター*/
-/*買い物リスト作成ボタン*/
-#sbtn{
-    width:250px;
-    height:50px;
-    border-radius:12px;
-    border:6px solid rgb(211, 225, 113);/* 枠線 */
-}
-}
+    body {
+        border:10px solid rgb(211, 225, 113);/* 枠線 */
+        
+    }
+    /* ヘッダー*/
+    header{
+        width: 320px;
+        height: 80px;
+    }
+    
+    h1{
+        width:300px;
+        font-size:90%;
+        left:48%;
+    }
+    
+    h2{
+        top: 80%;
+        left: 82%;
+        font-size: 60%;
+    }
+    
+    /*ボディー*/
+    .recipe{	
+        padding: 10px;
+        margin-top: 10px;
+        width: 290px;  
+        height: 160px;
+        top:12%;
+    }
+    
+    img{
+        width: 100px;
+        height: 100px;   
+        top: 64%;   
+        left:19%;
+    }
+    
+    .recipe h4{
+        left:50%;
+        width: 280px;
+        font-size: 80%;
+    }
+    
+    .ingredients {
+        left:68%;
+        font-size: 75%;
+        width: 195px;
+    }
+    
+    .name {
+        left:68%;
+        font-size: 60%;
+    }
+    
+    .favorite {
+        top:82%;
+        left:84%;       
+        font-size: 65%;
+        height: 45px;
+        width: 88px; 
+    }
+    
+    .checkbox01 {
+        left: 101%;
+    }
+    .checkbox01::before {
+        height: 22px;
+        width: 22px;    
+    }
+    .checkbox01::after {
+        height: 16px;
+        width: 8px;
+    }
+    
+    /*フッター*/
+    /*買い物リスト作成ボタン*/
+    #sbtn{
+        width:230px;
+        height:50px;
+        border-radius:12px;
+        font-size: 100%;
+        border:6px solid rgb(211, 225, 113);/* 枠線 */
+    }
+    }
