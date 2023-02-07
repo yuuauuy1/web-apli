@@ -255,8 +255,8 @@ header{
 }
 
 h1{
-    width:300px;
-    font-size:100%;
+    width:320px;
+    font-size:90%;
     left:4%;
 }
 
@@ -267,7 +267,6 @@ h1{
     width: 290px;  
     height: 160px;
     top:12%;
-    left:45%;
 }
 
 img{
@@ -285,7 +284,7 @@ img{
 
 .ingredients {
     left:68%;
-    font-size: 75%;
+    font-size: 72%;
     width: 195px;
 }
 
@@ -299,7 +298,7 @@ img{
     left:84%;       
     font-size: 65%;
     height: 45px;
-    width: 88px; 
+    width: 86px; 
 }
     
 /*人数入力ボックス*/
@@ -307,7 +306,7 @@ img{
     height:30px;
     width:30px;	 	
     font-size: 70%;	
-    left: 107%;
+    left: 108%;
 }
 .recipe_btn{
     top: 75%;
