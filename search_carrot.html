@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset= "UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <title>To buy list for cooking search</title>
+        <link rel="stylesheet" href="css/search_carrot.css">
+    </head>
+    <body>
+      <header>                   
+        <h1>人参　のレシピ一覧</h1>                  
+        <h2>買い物 リストに入れる<br>レシピにチェック ✅</h2>                   
+      </header>
+      <div class ="recipe_index">
+        <div class ="recipe">
+          <li class ="recipe_menu">
+            <a href = "https://recipe.rakuten.co.jp/recipe/1340024949/">
+              <img src ="https://recipe.r10s.jp/recipe-space/d/strg/ctrl/3/31936bf4ed1d130116286291c91c417c6ef72f99.23.2.3.2.jpg?interpolation=lanczos-none&fit=around|716:716&crop=716:716;*,*">
+              <h4>にんじん大量消費にんじんとツナ缶のごま味噌マヨ和え</h4>
+              <dic class = "ingredients">
+                にんじん、ツナ缶、★マヨネーズ、★白ごま、酢、★味噌（合わせみそ使用）
+              </dic>
+              <div class ="name">
+                by どめさん
+              </div>
+              <button class="favorite" type="button"> お気に入りに追加</button>
+            </a>
+          </li>
+          <div class ="recipe_btn">
+            <input type="checkbox" id="01-A" name="checkbox01" checked="checked">
+            <label for="01-A" class="checkbox01"></label>
+          </div>
+        </div>
+        <div class ="recipe">
+          <li class ="recipe_menu">
+            <a href="https://recipe.rakuten.co.jp/recipe/1500011564/">  
+              <img src ="https://recipe.r10s.jp/recipe-space/d/strg/ctrl/3/72952a8e190f11511529329b9942a6a3e507fe7b.88.2.3.2.jpg?interpolation=lanczos-none&fit=around|716:716&crop=716:716;*,*">
+              <h4>絶対喜ばれる♡スペインバル風絶品にんじんサラダ</h4>
+              <dic class = "ingredients">
+                人参（中）、塩、オリーブオイル、ニンニク、米酢、水菜、パセリ
+              </dic>
+              <div class ="name">
+                by ぼったん88
+              </div>
+              <button class="favorite" type="button"> お気に入りに追加</button>
+            </a>
+          </li>                  
+          <div class ="recipe_btn">
+            <input type="checkbox" id="01-B" name="checkbox01" checked="checked">
+            <label for="01-B" class="checkbox01"></label>
+          </div>
+        </div>
+        <div class ="recipe">
+          <li class ="recipe_menu">
+            <a href ="https://recipe.rakuten.co.jp/recipe/1230001074/">
+              <img src ="https://recipe.r10s.jp/recipe-space/d/strg/ctrl/3/e7ee9f85928c7e0b3f71994da79406a21ecb76a6.82.2.3.2.jpg?interpolation=lanczos-none&fit=around|716:716&crop=716:716;*,*">
+              <h4>混ぜるだけ*にんじんとゆでたまごのサラダ</h4>
+              <dic class = "ingredients">
+                にんじん、たまご、☆オリーブオイル、☆レモン汁、☆塩・こしょう
+              </dic>
+              <div class ="name">
+                by wanaka_tekapo
+              </div>
+              <button class="favorite" type="button"> お気に入りに追加</button>
+            </a>
+          </li>
+          <div class ="recipe_btn">
+              <input type="checkbox" id="01-C" name="checkbox01" checked="checked">
+              <label for="01-C" class="checkbox01"></label>
+          </div>
+        </div>
+      </div>
+      <div class = "add_list">
+        <form id ="form1" action="http://127.0.0.1:5500/recipe_list.html" method="get">
+          <input id= "sbtn" type="submit" name="submit" value="買い物リスト に追加">
+        </form>
+      </div>         
+    </body>
+</html>
