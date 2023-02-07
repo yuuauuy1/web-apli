@@ -245,75 +245,89 @@ img{
 }      
 /*ブレイクポイント指定(スマホ表示)*/
 @media (max-width: 670px){
-    /* ヘッダー*/
-    header{
-        width: 450px;
-        height: 100px;
-    }
+body {
+    border:10px solid rgb(211, 225, 113);/* 枠線 */    
+}
+/* ヘッダー*/
+header{
+    width: 320px;
+    height: 80px;
+}
+
+h1{
+    width:300px;
+    font-size:100%;
+    left:4%;
+}
+
+/*ボディー*/
+.recipe{	
+    padding: 10px;
+    margin-top: 10px;
+    width: 290px;  
+    height: 160px;
+    top:12%;
+    left:45%;
+}
+
+img{
+    width: 100px;
+    height: 100px;   
+    top: 64%;   
+    left:19%;
+}
+
+.recipe h4{
+    left:50%;
+    width: 280px;
+    font-size: 80%;
+}
+
+.ingredients {
+    left:68%;
+    font-size: 75%;
+    width: 195px;
+}
+
+.name {
+    left:68%;
+    font-size: 60%;
+}
+
+.favorite {
+    top:82%;
+    left:84%;       
+    font-size: 65%;
+    height: 45px;
+    width: 88px; 
+}
     
-    h1{
-        width:420px;
-        font-size:130%;
-    }
-    
-    /*ボディー*/
-    .recipe{
-        padding: 12px;
-        margin-top: 12px;
-        width:370px;  
-        height: 160px;
-        top:12%;	
-    }
-    
-    a{
-        color: #404040;
-        text-decoration: none;
-        word-break: break-all;
-    }
-    
-    li{
-        list-style:none;
-    }
-    
-    img{
-        width: 135px;
-        height: 135px;      
-        left:19%;
-    }
-    
-    .recipe h4{
-        left:68%;
-        width: 240px;
-        font-size: 80%;
-    }
-    
-    .ingredients {
-        left:68%;
-        font-size: 75%;
-        width: 240px;
-    }
-    
-    .name {
-        left:64%;
-    }
-    
-    .favorite {
-        top:78%;
-        left:82%;
-    }
-    
-    /*人数入力ボックス*/
-    #number_button{
-        height:30px;
-        width:50px;	 	
-        font-size: 100%;	
-    }
-    .recipe_btn{
-        top: 75%;
-        left: 115%;         
-    }
-    .list_create{
-        height: 235px;	
-        position:relative;	
-        transform: translate(-50%, -50%);}
-    }
+/*人数入力ボックス*/
+#number_button{
+    height:30px;
+    width:30px;	 	
+    font-size: 70%;	
+    left: 107%;
+}
+.recipe_btn{
+    top: 75%;
+    left: 113%;   
+    font-size: 60%;      
+}
+/*フッター*/
+.list_create{
+    height: 100px;	
+
+}
+
+  
+/*買い物リスト作成ボタン*/
+#sbtn{
+    width:230px;
+    height:50px;
+    border:6px solid rgb(211, 225, 113);/* 枠線 */
+    box-sizing:border-box;
+    border-radius:12px;
+    font-size:100%;
+}
+}
