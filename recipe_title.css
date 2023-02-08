@@ -1,0 +1,165 @@
+@charset "utf-8";
+/*ブレイクポイント指定しない時は通常のPC画面表示*/
+
+/*フォーム全体*/
+html {
+    height:100%;
+}
+body {
+    width: 100%;
+    border:20px solid rgb(211, 225, 113);/* 枠線 */
+    box-sizing:border-box;
+    font-size: 20px;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: block;
+    height:100%;
+}
+
+
+.title{
+  position:relative;/*フォームの相対位置*/	
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 500px;
+}
+
+h1{
+    color: rgb(107, 106, 106);
+    border-bottom: 3px solid rgb(211, 225, 113);
+    padding-bottom: 10px;
+    position:absolute;/*フォームの相対位置*/	
+    top: 30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-weight:bold;/*検索ボタンのテキスト太字*/ 
+    font-size:200%;/*検索ボタンのフォントサイズ*/
+    width: 500px;
+    text-align: center;
+}
+
+p{
+    color: rgb(107, 106, 106);
+    background-color: white;
+    position:absolute;/*フォームの相対位置*/	
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);    
+    margin: 10px;
+    width: 100%;
+    text-align: center;
+}
+.searchbox{
+    background-color: rgb(211, 225, 113);
+    border-radius:16px ;/*検索ボックスの角を丸める*/
+    height: 90px;
+    width: 400px;	
+    position:absolute;/*フォームの絶対位置*/	
+    left:50%;
+    top:70%;	
+    transform: translate(-50%, -50%);
+}
+#form1{
+    
+    max-width:300px;/*フォームのサイズ*/
+    
+    margin-bottom:15px;/*フォームの下に余白*/	 	
+    }
+
+    /*検索ボックス*/
+    #sbox{
+    position:absolute;/*フォームの絶対位置*/	
+    top: 50%;
+    left: 40%; 
+    transform: translate(-50%, -50%);
+    outline:0;/*クリック時の青い枠線消す*/	
+    height:76%;/*検索ボックスの高さ*/	
+    width:72%;
+    padding-left:10px;/*テキスト位置調整*/	 
+    border-radius:16px;/*検索ボックスの角を丸める*/		
+    background:rgb(253, 252, 252);/*検索ボックスの背景カラー*/	
+    font-size: 125%;	
+    border:none;/*検索ボックスの枠線を消す*/
+    }
+
+    /*検索ボタン*/
+    #sbtn{
+    width:16%;/*検索ボタンの横幅*/ 
+    height:76%;/*検索ボタンの縦幅*/ 
+    position:absolute;/*検索ボタンの絶対位置*/  
+    left:87%;/*検索ボタンの位置調整*/  
+    top:50%;
+    transform: translate(-50%, -50%);
+    border-radius:16px;/*検索ボタンの角を丸める*/ 
+    background:rgb(255, 255, 254);/*検索ボタンの背景カラー*/ 
+    border:none;/*検索ボタンの枠線を消す*/ 
+    color:rgb(107, 106, 106);/*検索ボタンのテキストカラー*/ 
+    font-weight:bold;/*検索ボタンのテキスト太字*/ 
+    font-size:75%;/*検索ボタンのフォントサイズ*/ 
+    }
+
+    /*検索ボタンマウスオーバー時*/
+    #sbtn:hover{
+    color:rgb(178, 197, 53);/*検索ボタンマウスオーバー時のフォントカラー*/ 
+    }
+
+/*ブレイクポイント指定(タブレット表示)*/
+@media (max-width: 1000px){
+.title{
+    width: 500px;
+    height: 400px;
+}
+      
+h1{
+    top: 25%;
+    width: 450px;
+}
+      
+.searchbox{
+    height: 70px;
+    width: 350px;	
+    top:75%;	
+}     
+
+/*検索ボックス*/
+#sbox{
+    font-size: 100%;	
+}      
+}      
+
+/*ブレイクポイント指定(スマホ表示)*/
+@media (max-width: 670px){
+body {
+    border:10px solid rgb(211, 225, 113);/* 枠線 */
+
+}
+.title{
+    width: 300px;
+    height: 300px;
+}
+          
+h1{
+    top: 25%;
+    width: 300px;
+    font-size: 120%;
+}
+
+p{
+    top: 58%;  
+    margin: 8px;
+    width: 80%;
+}
+          
+.searchbox{
+    height: 70px;
+    width: 300px;	
+    top:85%;	
+}     
+    
+/*検索ボックス*/
+#sbox{
+    font-size: 100%;	
+}          
+}
